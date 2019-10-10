@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Tags, 电波女与青春男">
-    <meta name="description" content="Tags | 电波女与青春男">
+    <meta name="keywords" content="how to use hexo, 电波女与青春男">
+    <meta name="description" content="hexo使用方法新建文章:hexo new &amp;quot;your post title&amp;quot;本地服务器:hexo server清除缓存文件:hexo cleanhexo-qiniu-sync上传文件到七牛云:hexo qiniu sy">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Tags | 电波女与青春男</title>
+    <title>how to use hexo | 电波女与青春男</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -260,13 +260,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        tags
+                        how to use hexo
                     </div>
                 </div>
             </div>
@@ -388,7 +388,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-19
+                    2019-10-10
                 </div>
 
                 
@@ -404,7 +404,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="hexo使用方法"><a href="#hexo使用方法" class="headerlink" title="hexo使用方法"></a>hexo使用方法</h1><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章:"></a>新建文章:</h3><pre><code>hexo new &quot;your post title&quot;</code></pre><h3 id="本地服务器"><a href="#本地服务器" class="headerlink" title="本地服务器:"></a>本地服务器:</h3><pre><code>hexo server</code></pre><h3 id="清除缓存文件"><a href="#清除缓存文件" class="headerlink" title="清除缓存文件:"></a>清除缓存文件:</h3><pre><code>hexo clean</code></pre><h3 id="hexo-qiniu-sync上传文件到七牛云"><a href="#hexo-qiniu-sync上传文件到七牛云" class="headerlink" title="hexo-qiniu-sync上传文件到七牛云:"></a>hexo-qiniu-sync上传文件到七牛云:</h3><pre><code>hexo qiniu sync</code></pre><p>因为是使用七牛临时域名，一个月要新建一个存储空间，同时需更换_config.yml内qiniu的bucket和urlPrefix。</p>
+<pre class=" language-yml"><code class="language-yml">qiniu:
+  bucket: your-new-bucket
+  urlPrefix: http://your-new-url.com </code></pre>
+<h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章:"></a>发布文章:</h3><pre><code>hexo deploy --generate</code></pre><h3 id="使用concurrently来整合命令"><a href="#使用concurrently来整合命令" class="headerlink" title="使用concurrently来整合命令:"></a>使用concurrently来整合命令:</h3><pre class=" language-json"><code class="language-json">  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"concurrently \"hexo clean\" \"hexo s\" "</span><span class="token punctuation">,</span>
+    <span class="token property">"push"</span><span class="token operator">:</span> <span class="token string">"concurrently \"hexo qiniu sync\" \"hexo deploy --generate\" "</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<pre><code>npm start  运行服务器
+npm run push  发布文章同时上传七牛资源</code></pre>
             </div>
             <hr/>
 
@@ -562,9 +571,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《tags》
+                    《how to use hexo》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/tags/index.html" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/10/how-to-use-hexo/" property="cc:attributionName"
                rel="cc:attributionURL">
                 armsarms
             </a> is licensed under a
@@ -609,24 +618,24 @@
                 <i class="fa fa-dot-circle-o"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/tags/index.html">
+                <a href="/2019/10/10/how-to-use-hexo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="tags">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="how to use hexo">
                         
-                        <span class="card-title">tags</span>
+                        <span class="card-title">how to use hexo</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            hexo使用方法新建文章:hexo new &quot;your post title&quot;本地服务器:hexo server清除缓存文件:hexo cleanhexo-qiniu-sync上传文件到七牛云:hexo qiniu sy
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-19
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-10
                             </span>
                         <span class="publish-author">
                             
@@ -644,27 +653,31 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="fa fa-dot-circle-o"></i>
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/tags/index.html">
+                <a href="/2019/10/09/cos/">
                     <div class="card-image">
                         
+                        <img src="http://pyh8k7w0c.bkt.clouddn.com/1b580c186b999251.jpg" class="responsive-img" alt="cos">
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="tags">
-                        
-                        <span class="card-title">tags</span>
+                        <span class="card-title">cos</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            链接：https://pan.baidu.com/s/1jPy3sqJdXZEwjUrw4VYsoQ提取码：h4ac 
+
+10部电影中文字幕
+共128g，有大有小
+
+besthd-avatar.extended-1080p.mkvAveng
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-19
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-09
                             </span>
                         <span class="publish-author">
                             
@@ -674,7 +687,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
